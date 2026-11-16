@@ -70,6 +70,7 @@ from graphify.extractors.csharp import (
 from graphify.extractors.dart import extract_dart  # noqa: F401
 from graphify.extractors.dm import extract_dm, extract_dmf, extract_dmi, extract_dmm  # noqa: F401
 from graphify.extractors.elixir import extract_elixir  # noqa: F401
+from graphify.extractors.elisp import extract_elisp  # noqa: F401
 from graphify.extractors.erlang import extract_erlang, resolve_erlang_remote_calls  # noqa: F401
 from graphify.extractors.fortran import _cpp_preprocess, extract_fortran  # noqa: F401
 from graphify.extractors.go import _GO_PREDECLARED_FUNCS, extract_go  # noqa: F401
@@ -11031,6 +11032,7 @@ _DISPATCH: dict[str, Any] = {
     ".dart": extract_dart,
     ".ml": extract_ocaml,
     ".mli": extract_ocaml,
+    ".el": extract_elisp,
     ".lisp": extract_commonlisp,
     ".cl": extract_commonlisp,
     ".lsp": extract_commonlisp,
